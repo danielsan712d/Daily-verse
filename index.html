@@ -23,15 +23,25 @@
 
     .overlay {
       background: rgba(255, 255, 255, 0.82);
-      padding: 4rem 4.5rem;
+      padding: 5rem 6rem;
       border-radius: 0.75rem;
-      max-width: 980px;
-      min-height: 420px;
+      width: 90vw;
+      height: 80vh;
+      max-width: 1200px;
       border: 1px solid rgba(0,0,0,0.08);
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+
+    @media (max-width: 700px) {
+      .overlay {
+        width: 92vw;
+        height: auto;
+        min-height: 75vh;
+        padding: 3rem 2.5rem;
+      }
     }
 
     h1 {
@@ -155,4 +165,3 @@
   </script>
 </body>
 </html>
-
